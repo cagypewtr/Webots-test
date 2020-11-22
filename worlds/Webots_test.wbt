@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.58239124682633 0.7945231767078497 0.171910899288381 0.6741251067467784
-  position 1.4106783709374047 1.1098089253799315 2.048713868783871
+  orientation -0.0627678852850929 -0.8436133670193366 -0.5332697999728989 2.955067529509234
+  position -0.012629104418565112 0.12668078641116431 -0.058719732555605586
 }
 TexturedBackground {
 }
@@ -14,4 +14,15 @@ RectangleArena {
   translation 0 -0.03 0
   floorSize 2 2
   wallHeight 0.2
+}
+TinkerbotsBase {
+  name "Petr_bot"
+}
+TinkerbotsBase {
+  translation 0.61 0 0
+  rotation 0 1 0 0
+  upSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+  }
 }
