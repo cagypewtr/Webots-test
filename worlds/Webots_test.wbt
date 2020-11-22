@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.0627678852850929 -0.8436133670193366 -0.5332697999728989 2.955067529509234
-  position -0.012629104418565112 0.12668078641116431 -0.058719732555605586
+  orientation 0.00017531963118382765 -0.9643318626229299 -0.26469610498308715 3.0474377090685416
+  position 0.3649648740463603 0.6551661738265597 -1.0381137082960379
 }
 TexturedBackground {
 }
@@ -16,13 +16,52 @@ RectangleArena {
   wallHeight 0.2
 }
 TinkerbotsBase {
-  name "Petr_bot"
+  translation 0.590539 -0.00930341 -0.0872794
+  rotation -1.0993043472631793e-05 -0.9999996202358169 -0.0008714398284443513 -1.6138460147717375
 }
 TinkerbotsBase {
-  translation 0.61 0 0
-  rotation 0 1 0 0
+  hidden linearVelocity_0 -0.15122853013008214 -0.0003972792009077403 0.12768929221223918
+  hidden angularVelocity_0 -0.0010581995724538505 -0.7263228596313062 0.00648632012245943
+  hidden position_3_0 661.3577972310947
+  hidden translation_5 -0.0008023050090849942 -0.00020989107729038614 -7.005749982562023e-05
+  hidden rotation_5 0.26799091771026917 -0.9550463462706658 -0.1267570293903228 6.256253417466614
+  hidden linearVelocity_5 -0.20521232035327466 -0.00048674255338459116 0.1278497662948967
+  hidden angularVelocity_5 4.861069369658775 -0.8098579748543148 7.803158397485788
+  hidden position_8_0 419.9159303450905
+  hidden translation_10 -0.01980334755834485 1.243987097047927e-05 0.019320586048880067
+  hidden rotation_10 -0.0042123230149910115 0.9999888663183321 -0.002126869576284161 1.534200773199231
+  hidden linearVelocity_10 -0.12903070091855265 0.0001335391577811432 0.08089555855480628
+  hidden angularVelocity_10 3.0494374458551006 -0.7808911999527435 4.9205617333168306
+  translation 0.7346953691571804 -0.004196587958176638 0.13804100064368843
+  rotation -0.0007475999335296885 0.9999891575705101 0.00459628499560171 -1.032781225599669
+  name "Petr_bot"
   upSlot TinkerbotsCube {
-    upSlot TinkerbotsCube {
+    leftSlot TinkerbotsCube {
+      rightSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707950010791611
+        name "motor2"
+        upBSlot TinkerbotsCubieTriangle {
+        }
+        backSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
     }
+    rightSlot TinkerbotsCube {
+      leftSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5708003061004252
+        name "motor1"
+        upASlot TinkerbotsCubieTriangle {
+          rotation 0 0 1 -1.5708003061004252
+        }
+        frontSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+  }
+  downBSlot TinkerbotsFinger {
   }
 }
