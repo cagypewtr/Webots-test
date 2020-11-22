@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 3.486781639881552e-05 -0.9814622878452969 -0.19165535818680132 3.173731129974643
-  position 0.001530649655116908 0.28311776044109144 -0.6507773423343606
+  orientation 0.6198104184057295 -0.5318700840284897 -0.5770175551499641 4.190299739754755
+  position 0.046035629289895345 1.1981783322765527 0.09571974045379004
 }
 TexturedBackground {
 }
@@ -16,8 +16,10 @@ RectangleArena {
   wallHeight 0.2
 }
 TinkerbotsBase {
+  name "Petr_bot"
   controller "petr_robot_remote"
   leftSlot TinkerbotsCube {
+    name "1"
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 -1.570795613280012
       name "front_right_wheel"
@@ -36,6 +38,7 @@ TinkerbotsBase {
     }
   }
   rightSlot TinkerbotsCube {
+    name "2"
     leftSlot TinkerbotsMotor {
       rotation 0 0 1 1.5707996938995747
       name "back_left_wheel"
